@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhanu Sri Damisetty — Aspiring Software Engineer & AI Developer portfolio featuring full-stack projects, AI applications, verified certificates, and technical stack.">
+  <meta name="keywords" content="Bhanu Sri Damisetty, Portfolio, Software Developer, Python, AI Developer, Full Stack, FastAPI, Machine Learning">
+  <meta name="author" content="Bhanu Sri Damisetty">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bhanu Sri Damisetty | Developer & AI Portfolio">
+  <meta property="og:description" content="Explore projects, skills, certificates, and engineering journey of Bhanu Sri Damisetty.">
+  <meta property="og:image" content="my-photo.jpg">
+
+  <title>Bhanu Sri Damisetty | Developer & AI Portfolio</title>
+
+  <!-- Google Fonts Preconnect & Inter / JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Main Navigation Header -->
+  <div class="header-wrapper">
+    <header class="wrap nav-container">
+      <a href="#home" class="brand" aria-label="Bhanu Sri Portfolio Home">
+        <span class="brand-dot"></span>
+        Bhanu Sri<span>.</span>
+      </a>
+
+      <nav aria-label="Desktop Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Resume Modal Trigger -->
+        <button class="btn btn-secondary btn-sm resume-btn" aria-label="View or download resume">
+          Resume 📄
+        </button>
+
+        <!-- Theme Toggle (Dark/Light) -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          🌙
+        </button>
+
+        <!-- Direct Contact CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm" id="header-contact-cta">
+          Let's Talk ↗
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#certificates" class="nav-link">Certificates</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <button class="btn btn-secondary btn-sm resume-btn" style="width: 100%; margin-top: 8px;">
+      View Resume 📄
+    </button>
+  </div>
+
+  <main>
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <header class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="status-badge">
+              <span class="status-indicator"></span>
+              Open to Opportunities & Collaborations
+            </span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Hi, I'm <br><span class="gradient-text">Bhanu Sri.</span>
+          </h1>
+
+          <!-- Typewriter dynamic roles -->
+          <div class="typewriter-wrapper">
+            <span>I build as a</span>
+            <span id="typewriter" class="typewriter-text">Full-Stack Developer</span>
+          </div>
+
+          <p class="hero-bio" id="hero-bio">
+            I build intuitive web experiences and intelligent AI-powered solutions. Passionate about transforming complex engineering challenges into clean, accessible, and high-impact digital products.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              Explore Featured Work <span>↗</span>
+            </a>
+            <button class="btn btn-secondary resume-btn">
+              View Resume 📄
+            </button>
+            <a href="#contact" class="btn btn-secondary">
+              Get In Touch ✉️
+            </a>
+          </div>
+
+          <div class="social-links" id="hero-socials">
+            <!-- Dynamically populated from data.js -->
+          </div>
+        </div>
+
+        <!-- Portrait photo card with fallback -->
+        <div class="portrait-card" aria-label="Portrait card">
+          <div class="portrait-frame">
+            <img id="hero-photo" src="my-photo.jpg" alt="Bhanu Sri Damisetty">
+            <div id="photo-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 20px; background: var(--surface-subtle);">
+              <span style="font-size: 3rem; margin-bottom: 10px;">👩‍💻</span>
+              <strong style="font-size: 1.1rem;">Bhanu Sri Damisetty</strong>
+              <small style="color: var(--text-muted); margin-top: 6px;">Developer & Builder</small>
+            </div>
+          </div>
+          <div class="portrait-note">
+            <span>✦</span> Curious Mind · Creative Builds
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics / Stats Banner -->
+      <div class="wrap">
+        <div class="stats-banner" id="stats-banner">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         ABOUT SECTION
+         ==================================================================== -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Background & Philosophy</div>
+            <h2 class="section-title">Building skills, one project at a time.</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Narrative Story & Education -->
+          <div class="about-card">
+            <div class="about-story" id="about-story">
+              <!-- Dynamically populated from data.js -->
+            </div>
+            <div id="about-education">
+              <!-- Dynamically populated from data.js -->
+            </div>
+          </div>
+
+          <!-- Key Pillars -->
+          <div class="about-card">
+            <h3 style="font-size: 1.18rem; font-weight: 700; margin-bottom: 18px; color: var(--text-primary);">
+              Core Pillars of My Work
+            </h3>
+            <div class="pillars-list" id="about-pillars">
+              <!-- Dynamically populated from data.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SKILLS SECTION
+         ==================================================================== -->
+    <section id="skills" style="background: var(--bg-secondary);">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Technical Competencies</div>
+            <h2 class="section-title">Tools & Technologies I Work With</h2>
+            <p class="section-intro">
+              A balanced toolkit spanning modern front-end interfaces, Python backend architecture, generative AI APIs, and database design.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PROJECTS SECTION
+         ==================================================================== -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Selected Work</div>
+            <h2 class="section-title">Projects I'm Building</h2>
+            <p class="section-intro">
+              Explore real-world software, AI applications, and interactive web tools. Every project represents deliberate practice and real problem-solving.
+            </p>
+          </div>
+          <a href="https://github.com/bhanu-367-sri?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            All Repositories on GitHub ↗
+          </a>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="filter-search-toolbar">
+          <div class="filter-pills" role="tablist" aria-label="Project category filters">
+            <button class="filter-btn active" data-category="all">All Projects</button>
+            <button class="filter-btn" data-category="ai">AI & Machine Learning</button>
+            <button class="filter-btn" data-category="web">Web & Full Stack</button>
+          </div>
+
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="project-search" class="search-input" placeholder="Search projects, tags, or tools..." aria-label="Search projects">
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CERTIFICATES & CREDENTIALS SECTION (Brand New!)
+         ==================================================================== -->
+    <section id="certificates" style="background: var(--bg-secondary);">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Continuous Learning</div>
+            <h2 class="section-title">Certificates & Credentials</h2>
+            <p class="section-intro">
+              Verified certifications, standardized course assessments, and hackathon accomplishments demonstrating domain knowledge.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate Category Filter -->
+        <div class="filter-pills" style="margin-bottom: 24px;" role="tablist" aria-label="Certificate category filters">
+          <button class="filter-btn cert-filter-btn active" data-cert-category="all">All Credentials</button>
+          <button class="filter-btn cert-filter-btn" data-cert-category="ai">AI & Python</button>
+          <button class="filter-btn cert-filter-btn" data-cert-category="web">Web Development</button>
+          <button class="filter-btn cert-filter-btn" data-cert-category="data">Data & SQL</button>
+          <button class="filter-btn cert-filter-btn" data-cert-category="achievement">Hackathons</button>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div class="certificates-grid" id="certificates-grid">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONTACT SECTION
+         ==================================================================== -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Have an Idea or Opportunity?</div>
+            <h2 class="section-title">Let's build something remarkable.</h2>
+            <p class="section-intro">
+              I am open to developer internships, project collaborations, and discussions on AI and software engineering. Reach out directly or drop a message below!
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Details Card -->
+          <div class="contact-info-card">
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">
+                Direct Contact & Socials
+              </h3>
+              <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.94rem;">
+                Feel free to email me directly or connect via LinkedIn. I typically reply within 24 hours.
+              </p>
+
+              <div class="contact-details-list">
+                <div class="contact-detail-item">
+                  <span class="contact-detail-icon">✉️</span>
+                  <div style="flex-grow: 1;">
+                    <strong>Email Address</strong>
+                    <span id="contact-email-text">bhanusridamisetty@gmail.com</span>
+                  </div>
+                  <button class="btn btn-secondary btn-sm" id="copy-email-contact-btn" title="Copy email">
+                    Copy 📋
+                  </button>
+                </div>
+
+                <div class="contact-detail-item">
+                  <span class="contact-detail-icon">💼</span>
+                  <div style="flex-grow: 1;">
+                    <strong>Professional Profile</strong>
+                    <a href="https://www.linkedin.com/in/bhanu-sri-damisetty-4890553a2" target="_blank" rel="noopener noreferrer">
+                      LinkedIn Profile ↗
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <span class="contact-detail-icon">💻</span>
+                  <div style="flex-grow: 1;">
+                    <strong>Code Repositories</strong>
+                    <a href="https://github.com/bhanu-367-sri" target="_blank" rel="noopener noreferrer">
+                      GitHub @bhanu-367-sri ↗
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <span class="contact-detail-icon">📍</span>
+                  <div style="flex-grow: 1;">
+                    <strong>Location & Availability</strong>
+                    <span id="contact-loc-text">India (Open to Remote & Relocation)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 14px; border-top: 1px solid var(--surface-border);">
+              <span class="status-badge">
+                <span class="status-indicator"></span>
+                Currently available for new opportunities
+              </span>
+            </div>
+          </div>
+
+          <!-- Functional Interactive Contact Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary);">
+              Send a Direct Message
+            </h3>
+            <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 0.92rem;">
+              Fill out this quick form and click send to initiate an email directly to my inbox.
+            </p>
+
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="form-name">Your Full Name *</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email Address *</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="e.g. Internship Opportunity / Project Collaboration">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message *</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Hello Bhanu, I came across your portfolio and would love to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Send Message ↗
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer>
+    <div class="wrap footer-content">
+      <div>
+        <strong>Bhanu Sri Damisetty</strong> · 
+        <span>Built with care, clean code, and zero dependencies.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Back to Top ↑</a>
+        <a href="https://github.com/bhanu-367-sri" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/bhanu-sri-damisetty-4890553a2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       UNIVERSAL MODAL (PROJECT DETAILS & RESUME PREVIEW)
+       ==================================================================== -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div id="modal-body">
+        <!-- Dynamically injected -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    ↑
+  </button>
+
+  <!-- JavaScript Modules: Data first, then Application logic -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
