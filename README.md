@@ -2,8 +2,6 @@
 
 > A modern, performant, and scalable portfolio website built with clean vanilla web technologies, dynamic data architecture, dark/light theme switcher, and instant search & filtering.
 
-![Portfolio Preview Banner](my-photo.jpg)
-
 ---
 
 ## 🌟 Highlights & Features
